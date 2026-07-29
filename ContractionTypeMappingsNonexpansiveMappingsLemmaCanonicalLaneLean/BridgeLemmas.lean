@@ -1,0 +1,16 @@
+import canonicalLaneMathlib.AdmissibleClass
+import HautevilleHouse.ContractionTypeMappingsNonexpansiveMappingsLemmaCanonicalLaneLean.AdmissibleClass
+
+open HautevilleHouse.ContractionTypeMappingsNonexpansiveMappingsLemmaCanonicalLaneLean
+
+namespace HautevilleHouse
+namespace ContractionTypeMappingsNonexpansiveMappingsLemmaCanonicalLaneLean
+
+def bridgeClosed (A : AdmissibleClass) : Prop :=
+  ContractionBridgeClosed A.object
+
+theorem bridge_from_admissible_class (A : AdmissibleClass) : bridgeClosed A := by
+  exact A.object.fixedProperty
+
+end ContractionTypeMappingsNonexpansiveMappingsLemmaCanonicalLaneLean
+end HautevilleHouse

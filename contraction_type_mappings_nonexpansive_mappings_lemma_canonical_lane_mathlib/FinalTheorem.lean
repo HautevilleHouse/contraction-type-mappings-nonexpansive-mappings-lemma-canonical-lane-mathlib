@@ -1,0 +1,9 @@
+import contraction_type_mappings_nonexpansive_mappings_lemma_canonical_lane_mathlib.GateLemmas
+namespace HautevilleHouse
+namespace contraction_type_mappings_nonexpansive_mappings_lemma_canonical_lane_mathlib
+structure ConstrainedTheoremClosure where
+  admissible :: intro :: constraint :: consequence :: proof ::
+theorem canonical : ConstrainedTheoremClosure :=
+  ConstrainedTheoremClosure.intro
+end contraction_type_mappings_nonexpansive_mappings_lemma_canonical_lane_mathlib
+end HautevilleHouse
